@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creador de códigos QR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <h1>Creador de códigos QR</h1>
+  <form id="form">
+    <label for="text">Ingresa el texto a codificar:</label><br>
+    <input type="text" id="text"><br>
+    <div class="botones">
+        <button type="button" onclick="generateQR()">Generar QR</button>
+        <button type="button" onclick="downloadImage()">Descargar imágen</button>
+    </div>
+  </form>
+  
+  <canvas id="canvas"></canvas>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/qrcode@1.4.4/build/qrcode.min.js"></script>
+  <script src="generadorqr.js"></script>
+
+  <script src="descarga.js"></script>
+</body>
+<footer>
+    <p class="final">Derechos reservados Emmanuel Ramírez 2022</p>
+</footer>
+</html>
